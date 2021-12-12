@@ -1,0 +1,25 @@
+@use "variables";
+@use "mixin";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+@import "custom";
+@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap-icons/font/bootstrap-icons.scss";
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: variables.$black;
+}
+
+.active-link {
+  @include mixin.background-gradient-text;
+  font-weight: 700 !important;
+}
+
+@include mixin.keyframeAnimationName;

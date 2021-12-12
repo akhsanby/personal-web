@@ -1,0 +1,64 @@
+@use "variables";
+@use "mixin";
+
+.title {
+  color: variables.$white;
+  text-align: center;
+  span {
+    font-size: 3.7rem;
+    font-weight: 600;
+    display: block;
+    padding-bottom: 0.5rem;
+  }
+  span:nth-child(2) {
+    @include mixin.background-gradient-text;
+  }
+  span:nth-child(4) {
+    width: 60%;
+    margin: 1.4rem auto 0 auto;
+    font-size: 1rem;
+    font-weight: 500;
+    color: variables.$grey;
+    display: block;
+  }
+}
+
+.btn {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.8rem;
+  button:nth-child(1) {
+    color: variables.$white;
+    border: 3px solid variables.$blue;
+    border-radius: 10px;
+    padding: 0.4rem 1.5rem;
+  }
+  button:nth-child(2) {
+    color: variables.$white;
+    background-color: variables.$black;
+    border: 3px solid variables.$blue;
+    border-radius: 10px;
+    padding: 0.4rem 1.5rem;
+    &:hover {
+      background-color: variables.$blue;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    span {
+      font-size: 3rem;
+    }
+    span:nth-child(4) {
+      width: 80%;
+      margin: 1rem auto 0 auto;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: variables.$grey;
+      display: block;
+    }
+  }
+}
+
+@include mixin.keyframeAnimationName;

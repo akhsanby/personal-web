@@ -1,0 +1,21 @@
+@use "variables";
+
+.row {
+  row-gap: 2rem;
+  margin: 0;
+  padding: 6rem 6rem;
+}
+
+.card {
+  background-color: variables.$white !important;
+  width: 15rem;
+  img {
+    border-radius: 15px;
+  }
+}
+
+.card_body {
+  padding: 0.5rem;
+  text-align: center;
+  font-weight: 600;
+}

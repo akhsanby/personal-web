@@ -1,0 +1,55 @@
+@use "variables";
+
+@mixin btn {
+  color: variables.$white;
+  border: 3px solid variables.$blue;
+  border-radius: 10px;
+  padding: 0.4rem 1.5rem;
+}
+
+@mixin btn-outline {
+  color: variables.$white;
+  background-color: variables.$black;
+  border: 3px solid variables.$blue;
+  border-radius: 10px;
+  padding: 0.4rem 1.5rem;
+  &:hover {
+    background-color: variables.$blue;
+  }
+}
+
+@mixin background-gradient-text {
+  background: #c084fc;
+  background: -webkit-linear-gradient(
+    to right,
+    #c084fc 0%,
+    #ec4899 50%,
+    #ef4444 100%
+  );
+  background: -moz-linear-gradient(
+    to right,
+    #c084fc 0%,
+    #ec4899 50%,
+    #ef4444 100%
+  );
+  background: linear-gradient(to right, #c084fc 0%, #ec4899 50%, #ef4444 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-size: 400%;
+  -webkit-animation: AnimationName 3s ease infinite;
+  -moz-animation: AnimationName 3s ease infinite;
+  animation: AnimationName 3s ease infinite;
+}
+
+@mixin keyframeAnimationName {
+  @keyframes AnimationName {
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@use "variables";
+@use "mixin";
+
+.btn {
+  @include mixin.btn;
+  &:hover,
+  &:focus {
+    color: variables.$white;
+  }
+}
+
+.ul {
+  list-style-type: none;
+  margin: 1rem 0;
+  padding: 0;
+  li > i {
+    font-size: 1.5rem;
+    color: variables.$white;
+    line-height: 3rem;
+  }
+}
+
+@media screen and (width < 576px) {
+  .ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 0;
+    li:nth-child(1) {
+      display: none !important;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@use "variables";
+
+$theme-colors: (
+  // "primary":    $primary,
+  // "secondary":  $secondary,
+  // "success":    $success,
+  "info": variables.$blue,
+  // "warning":    $warning,
+  // "danger":     $danger,
+  "light": variables.$white,
+  "dark": variables.$black
+);
+
+$navbar-dark-color: variables.$white;
+$card-border-width: 2px;
+$card-border-radius: 15px;
+$card-inner-border-radius: subtract($card-border-radius, $card-border-width);
