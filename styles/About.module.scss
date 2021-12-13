@@ -1,0 +1,6 @@
+@use "variables";
+
+.img {
+  border: 3px solid variables.$white !important;
+  border-radius: 10px;
+}

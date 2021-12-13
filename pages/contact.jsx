@@ -7,7 +7,7 @@ import styles from "../styles/Contact.module.scss";
 export default function Contact() {
   return (
     <Layout>
-      <div className="bg-dark vw-100 vh-100 d-flex justify-content-center align-items-center overflow-auto">
+      <div className="vh-100 d-flex justify-content-center align-items-center">
         <Container>
           <Row className="justify-content-sm-center">
             <Col lg={4} md={5} sm={6}>
@@ -17,17 +17,17 @@ export default function Contact() {
               </p>
               <ul className={styles.ul}>
                 <li className="d-flex align-items-center gap-2">
-                  <i className="bi bi-geo-alt-fill"></i>
+                  <i className="fas fa-map-marker-alt"></i>
                   <span className="text-white">
                     Banyuurip, Tegalrejo, Magelang, Central Java, Indonesia
                   </span>
                 </li>
                 <li className="d-flex align-items-center gap-2">
-                  <i className="bi bi-telephone-fill"></i>
+                  <i className="fas fa-phone-alt"></i>
                   <span className="text-white">+62 895 4012 24170</span>
                 </li>
                 <li className="d-flex align-items-center gap-2">
-                  <i className="bi bi-envelope-fill"></i>
+                  <i className="far fa-envelope"></i>
                   <span className="text-white">akhsanby@gmail.com</span>
                 </li>
               </ul>

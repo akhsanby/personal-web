@@ -19,7 +19,7 @@ export default function _Navbar() {
   return (
     <Navbar
       collapseOnSelect
-      expand="lg"
+      expand="md"
       bg="dark"
       variant="dark"
       className={styles.navbar}

@@ -8,9 +8,17 @@
 
 .card {
   background-color: variables.$white !important;
-  width: 15rem;
+  width: 18rem;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    background-color: variables.$grey !important;
+    color: variables.$white !important;
+  }
   img {
     border-radius: 15px;
+    width: 100%;
+    height: 165px;
   }
 }
 
