@@ -10,7 +10,7 @@ export default function About() {
   return (
     <Layout>
       <Container fluid>
-        <div className="d-flex vh-100 justify-content-center align-items-center">
+        <div className={styles.subcontainer}>
           <div className="card bg-dark" style={{ maxWidth: "40rem" }}>
             <div className="row g-0">
               <div className="col-md-4 m-auto text-center">

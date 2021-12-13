@@ -11,30 +11,49 @@ export default function Portfolio() {
       url: "/images/image1.png",
       repo: "https://github.com/akhsanby/my-portfolio",
     },
+    {
+      title: "Portfolio Web",
+      url: "/images/image1.png",
+      repo: "https://github.com/akhsanby/my-portfolio",
+    },
+    {
+      title: "Portfolio Web",
+      url: "/images/image1.png",
+      repo: "https://github.com/akhsanby/my-portfolio",
+    },
+    {
+      title: "Portfolio Web",
+      url: "/images/image1.png",
+      repo: "https://github.com/akhsanby/my-portfolio",
+    },
   ];
 
   return (
     <Layout>
       <div className={styles.bg}>
-        <Container fluid>
+        <Container>
           <Row className={styles.row}>
             {myPortfolioImage.map((item, i) => (
-              <a
-                href={item.repo}
-                target="_blank"
+              <Col
+                lg={4}
+                xs={12}
                 key={i}
-                className="text-decoration-none text-dark"
-                rel="noreferrer"
+                className="d-flex justify-content-center"
               >
-                <Col lg={3}>
+                <a
+                  href={item.repo}
+                  target="_blank"
+                  className="text-decoration-none text-dark"
+                  rel="noreferrer"
+                >
                   <Card className={styles.card}>
                     <Card.Img variant="top" src={item.url} />
                     <Card.Body className={styles.card_body}>
                       <Card.Text>{item.title}</Card.Text>
                     </Card.Body>
                   </Card>
-                </Col>
-              </a>
+                </a>
+              </Col>
             ))}
           </Row>
         </Container>

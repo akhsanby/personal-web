@@ -1,6 +1,13 @@
 @use "variables";
 @use "mixin";
 
+.subcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 0;
+}
+
 .btn {
   @include mixin.btn;
   &:hover,
@@ -17,17 +24,5 @@
     font-size: 1.5rem;
     color: variables.$white;
     line-height: 3rem;
-  }
-}
-
-@media screen and (width < 576px) {
-  .ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 1rem 0;
-    li:nth-child(1) {
-      display: none !important;
-    }
   }
 }

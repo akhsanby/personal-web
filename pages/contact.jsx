@@ -7,8 +7,8 @@ import styles from "../styles/Contact.module.scss";
 export default function Contact() {
   return (
     <Layout>
-      <div className="vh-100 d-flex justify-content-center align-items-center">
-        <Container>
+      <Container fluid>
+        <div className={styles.subcontainer}>
           <Row className="justify-content-sm-center">
             <Col lg={4} md={5} sm={6}>
               <p className="text-white fs-1 fw-bold">Get in touch</p>
@@ -68,8 +68,8 @@ export default function Contact() {
               </Form>
             </Col>
           </Row>
-        </Container>
-      </div>
+        </div>
+      </Container>
     </Layout>
   );
 }

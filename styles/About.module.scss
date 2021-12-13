@@ -1,5 +1,12 @@
 @use "variables";
 
+.subcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 0;
+}
+
 .img {
   border: 3px solid variables.$white !important;
   border-radius: 10px;
