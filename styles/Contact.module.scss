@@ -3,9 +3,9 @@
 
 .subcontainer {
   display: flex;
+  height: 100vh;
   justify-content: center;
   align-items: center;
-  padding: 6rem 0;
 }
 
 .btn {
@@ -24,5 +24,12 @@
     font-size: 1.5rem;
     color: variables.$white;
     line-height: 3rem;
+  }
+}
+
+@media screen and (width < 576px) {
+  .subcontainer {
+    padding: 6rem 0;
+    height: auto;
   }
 }

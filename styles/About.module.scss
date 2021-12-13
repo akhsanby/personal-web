@@ -4,10 +4,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 6rem 0;
+  height: 100vh;
 }
 
 .img {
   border: 3px solid variables.$white !important;
   border-radius: 10px;
+}
+
+@media screen and (width < 576px) {
+  .subcontainer {
+    padding: 6rem 0;
+    height: auto;
+  }
 }
