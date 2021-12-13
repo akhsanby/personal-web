@@ -11,21 +11,6 @@ export default function Portfolio() {
       url: "/images/image1.png",
       repo: "https://github.com/akhsanby/my-portfolio",
     },
-    {
-      title: "Portfolio Web",
-      url: "/images/image1.png",
-      repo: "https://github.com/akhsanby/my-portfolio",
-    },
-    {
-      title: "Portfolio Web",
-      url: "/images/image1.png",
-      repo: "https://github.com/akhsanby/my-portfolio",
-    },
-    {
-      title: "Portfolio Web",
-      url: "/images/image1.png",
-      repo: "https://github.com/akhsanby/my-portfolio",
-    },
   ];
 
   return (

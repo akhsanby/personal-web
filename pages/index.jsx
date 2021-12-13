@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 // components
 import Layout from "../src/components/Layout";
 import { Button } from "react-bootstrap";
@@ -19,8 +21,12 @@ export default function Home() {
           </span>
         </h1>
         <div className={styles.btn}>
-          <Button variant="info">Contact Me</Button>
-          <Button variant="info">My Resume</Button>
+          <Link href="/contact">
+            <Button variant="info">Contact Me</Button>
+          </Link>
+          <a href="/cv/my_cv.pdf">
+            <Button variant="info">My Resume</Button>
+          </a>
         </div>
       </div>
     </Layout>

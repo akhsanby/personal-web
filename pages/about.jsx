@@ -20,6 +20,7 @@ export default function About() {
                   width={200}
                   height={200}
                   className={styles.img}
+                  priority
                 />
               </div>
               <div className="col-md-8">
