@@ -1,6 +1,13 @@
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import Layout from "../src/components/Layout";
 
+// icons
+import {
+  BsTelephoneFill,
+  BsFillGeoAltFill,
+  BsEnvelopeFill,
+} from "react-icons/bs";
+
 // custom styles
 import styles from "../styles/Contact.module.scss";
 
@@ -17,17 +24,23 @@ export default function Contact() {
               </p>
               <ul className={styles.ul}>
                 <li className="d-flex align-items-center gap-2">
-                  <i className="fas fa-map-marker-alt"></i>
+                  <i>
+                    <BsFillGeoAltFill />
+                  </i>
                   <span className="text-white">
                     Banyuurip, Tegalrejo, Magelang, Central Java, Indonesia
                   </span>
                 </li>
                 <li className="d-flex align-items-center gap-2">
-                  <i className="fas fa-phone-alt"></i>
+                  <i>
+                    <BsTelephoneFill />
+                  </i>
                   <span className="text-white">+62 895 4012 24170</span>
                 </li>
                 <li className="d-flex align-items-center gap-2">
-                  <i className="far fa-envelope"></i>
+                  <i>
+                    <BsEnvelopeFill />
+                  </i>
                   <span className="text-white">akhsanby@gmail.com</span>
                 </li>
               </ul>
