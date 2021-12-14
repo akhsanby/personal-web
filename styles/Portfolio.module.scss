@@ -1,8 +1,10 @@
 @use "variables";
+@use "mixin";
 
 .row {
   margin: 6rem auto;
   row-gap: 2rem;
+  animation: fadein 1s;
 }
 
 .card {
@@ -17,7 +19,7 @@
   img {
     border-radius: 15px;
     width: 100%;
-    height: 165px;
+    height: 140px;
   }
 }
 
@@ -26,3 +28,5 @@
   text-align: center;
   font-weight: 600;
 }
+
+@include mixin.keyframeFadeIn;
