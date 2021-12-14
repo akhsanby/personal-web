@@ -1,12 +1,51 @@
 import Image from "next/image";
-import { Container } from "react-bootstrap";
-
+import { Container, OverlayTrigger, Tooltip } from "react-bootstrap";
 import Layout from "../src/components/Layout";
+
+// icons
+import {
+  SiSass,
+  SiBootstrap,
+  SiJavascript,
+  SiTypescript,
+  SiTailwindcss,
+  SiReact,
+  SiNextdotjs,
+  SiVuedotjs,
+  SiPhp,
+  SiNodedotjs,
+  SiExpress,
+  SiCodeigniter,
+  SiLaravel,
+  SiMysql,
+  SiMongodb,
+} from "react-icons/si";
 
 // custom styles
 import styles from "../styles/About.module.scss";
 
 export default function About() {
+  const skillIcons = [
+    { name: "SASS", icon: <SiSass /> },
+    { name: "Bootstrap", icon: <SiBootstrap /> },
+    { name: "TailwindCSS", icon: <SiTailwindcss /> },
+    { name: "Javascript", icon: <SiJavascript /> },
+    { name: "Typescript", icon: <SiTypescript /> },
+    { name: "React", icon: <SiReact /> },
+    { name: "NextJS", icon: <SiNextdotjs /> },
+    { name: "Vue", icon: <SiVuedotjs /> },
+  ];
+
+  const familiarIcons = [
+    { name: "PHP", icon: <SiPhp /> },
+    { name: "NodeJS", icon: <SiNodedotjs /> },
+    { name: "ExpressJS", icon: <SiExpress /> },
+    { name: "Codeigniter", icon: <SiCodeigniter /> },
+    { name: "Laravel", icon: <SiLaravel /> },
+    { name: "MySQL", icon: <SiMysql /> },
+    { name: "MongoDB", icon: <SiMongodb /> },
+  ];
+
   return (
     <Layout>
       <Container fluid>
@@ -39,6 +78,38 @@ export default function About() {
                     i always make my code is{" "}
                     <span className="text-info">clean and easy to read</span>.
                   </p>
+                </div>
+              </div>
+              <div className="col-md-12">
+                <p className="text-white fs-5 fw-bold m-0">My Skills</p>
+                <div className="d-flex justify-content-around">
+                  {skillIcons.map((item, i) => (
+                    <OverlayTrigger
+                      key={i}
+                      placement="bottom"
+                      overlay={
+                        <Tooltip id="tooltip-bottom">{item.name}</Tooltip>
+                      }
+                    >
+                      <i className="text-white fs-3">{item.icon}</i>
+                    </OverlayTrigger>
+                  ))}
+                </div>
+              </div>
+              <div className="col-md-12 mt-4">
+                <p className="text-white fs-5 fw-bold m-0">Im familiar with</p>
+                <div className="d-flex justify-content-around">
+                  {familiarIcons.map((item, i) => (
+                    <OverlayTrigger
+                      key={i}
+                      placement="bottom"
+                      overlay={
+                        <Tooltip id="tooltip-bottom">{item.name}</Tooltip>
+                      }
+                    >
+                      <i className="text-white fs-3">{item.icon}</i>
+                    </OverlayTrigger>
+                  ))}
                 </div>
               </div>
             </div>
