@@ -11,6 +11,16 @@ export default function Portfolio() {
       url: "/images/image1.png",
       repo: "https://github.com/akhsanby/my-portfolio",
     },
+    {
+      title: "Rock Paper Scissor AI",
+      url: "/images/image2.png",
+      repo: "https://github.com/akhsanby/rps-v3",
+    },
+    {
+      title: "Static Time Tracking App",
+      url: "/images/image3.png",
+      repo: "https://github.com/akhsanby/tracking-app",
+    },
   ];
 
   return (
