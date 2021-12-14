@@ -1,4 +1,5 @@
 import { Navbar, Container, Nav } from "react-bootstrap";
+import { BsGithub, BsLinkedin, BsEnvelope, BsInstagram } from "react-icons/bs";
 
 // custom styles
 import styles from "../../styles/Footer.module.scss";
@@ -8,22 +9,22 @@ export default function _Footer() {
     {
       name: "Github",
       url: "https://github.com/akhsanby",
-      iconClass: "fab fa-github",
+      icon: <BsGithub />,
     },
     {
       name: "Linkedin",
       url: "https://www.linkedin.com/in/akhsanby",
-      iconClass: "fab fa-linkedin",
+      icon: <BsLinkedin />,
     },
     {
       name: "Instagram",
       url: "https://www.instagram.com/akhsanby",
-      iconClass: "fab fa-instagram",
+      icon: <BsInstagram />,
     },
     {
       name: "Email",
       url: "mailto:akhsanby@gmail.com",
-      iconClass: "far fa-envelope",
+      icon: <BsEnvelope />,
     },
   ];
 
@@ -33,7 +34,7 @@ export default function _Footer() {
         <Nav className="vw-100 d-flex justify-content-around align-items-center">
           {navLink.map((item, i) => (
             <Nav.Link href={item.url} target="_blank" key={i}>
-              <i className={item.iconClass}></i>
+              <i>{item.icon}</i>
             </Nav.Link>
           ))}
         </Nav>
