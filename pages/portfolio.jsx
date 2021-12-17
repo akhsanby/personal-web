@@ -7,7 +7,7 @@ import styles from "../styles/Portfolio.module.scss";
 export default function Portfolio() {
   const myPortfolioImage = [
     {
-      title: "Portfolio Web",
+      title: "Personal Web",
       url: "/images/image1.png",
       repo: "https://github.com/akhsanby/my-portfolio",
     },
@@ -20,6 +20,11 @@ export default function Portfolio() {
       title: "Static Time Tracking App",
       url: "/images/image3.png",
       repo: "https://github.com/akhsanby/tracking-app",
+    },
+    {
+      title: "News App",
+      url: "/images/image4.png",
+      repo: "https://github.com/akhsanby/koran-online",
     },
   ];
 
