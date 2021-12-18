@@ -1,0 +1,55 @@
+@use "variables";
+@use "mixin";
+
+.container {
+  padding: 0 2rem;
+}
+
+.row_1 {
+  width: 100%;
+  padding: 6rem 0 0 0;
+  margin: 0 auto;
+}
+
+.row_2 {
+  margin: 1rem auto 6rem auto;
+  row-gap: 2rem;
+  animation: fadein 1s;
+}
+
+.card {
+  background-color: variables.$dark-grey !important;
+  // width: 25rem;
+  height: auto;
+  cursor: pointer;
+  transition: 0.3s;
+  color: variables.$white;
+  padding: 0.8rem 0.8rem 0 0.8rem;
+  &:hover {
+    background-color: variables.$black !important;
+    color: variables.$white !important;
+  }
+  img {
+    border-radius: 10px;
+    height: auto;
+  }
+}
+
+.card_body {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+@media screen and (width < 576px) {
+  .container {
+    padding: 0;
+  }
+  .row_1 {
+    h1 {
+      text-align: center !important;
+    }
+  }
+}
+
+@include mixin.keyframeFadeIn;

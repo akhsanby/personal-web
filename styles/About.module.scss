@@ -3,10 +3,12 @@
 
 .subcontainer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  width: 100%;
   animation: fadein 1s;
+  padding: 6rem 6rem;
 }
 
 .img {
@@ -18,6 +20,9 @@
   .subcontainer {
     padding: 6rem 0;
     height: auto;
+    h1 {
+      text-align: center !important;
+    }
   }
 }
 

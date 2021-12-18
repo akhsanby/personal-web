@@ -9,7 +9,7 @@ import styles from "../styles/Home.module.scss";
 
 export default function Home() {
   return (
-    <Layout>
+    <Layout title="Home">
       <div className="vw-100 vh-100 d-flex flex-column justify-content-center align-items-center">
         <h1 className={styles.title}>
           <span>Hello, I'am</span>
