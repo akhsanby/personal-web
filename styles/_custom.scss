@@ -2,7 +2,7 @@
 
 $theme-colors: (
   // "primary":    $primary,
-  // "secondary":  $secondary,
+  "secondary": variables.$dark-grey,
   // "success":    $success,
   "info": variables.$blue,
   // "warning":    $warning,
@@ -13,5 +13,5 @@ $theme-colors: (
 
 $navbar-dark-color: variables.$white;
 $card-border-width: 2px;
-$card-border-radius: 15px;
+$card-border-radius: 10px;
 $card-inner-border-radius: subtract($card-border-radius, $card-border-width);

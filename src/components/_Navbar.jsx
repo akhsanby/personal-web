@@ -11,7 +11,7 @@ export default function _Navbar() {
   const navbarLink = [
     { name: "Home", url: "/" },
     { name: "About Me", url: "/about" },
-    { name: "Portfolio", url: "/portfolio" },
+    { name: "Project", url: "/project" },
     { name: "Blog", url: "/blog" },
     { name: "Contact", url: "/contact" },
   ];
