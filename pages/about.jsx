@@ -51,12 +51,12 @@ export default function About() {
       <Container fluid>
         <div className={styles.subcontainer}>
           <Row className="w-100">
-            <Col md={12} className="p-0">
+            <Col md={12}>
               <h1 className="text-light text-start active-link">About Me</h1>
             </Col>
           </Row>
           <Row className="my-4">
-            <Col md={3} className="m-auto text-center">
+            <Col md={4} className="text-center">
               <Image
                 src="/images/pp.png"
                 alt="pic"
@@ -66,7 +66,7 @@ export default function About() {
                 priority
               />
             </Col>
-            <Col md={9}>
+            <Col md={8}>
               <p className="card-text text-white">
                 Hello, my name is Akhsan Bayu Riantama, you can call me Akhsan.
                 I live in Magelang, Central Java. Magelang is small city but
@@ -90,8 +90,8 @@ export default function About() {
               </p>
             </Col>
           </Row>
-          <Row className="w-100 gap-4">
-            <Col md={12} className="p-0">
+          <Row className="w-100" style={{ rowGap: "1rem" }}>
+            <Col md={6}>
               <p className="text-white fs-5 fw-bold mb-1 active-link">
                 Technical Skills
               </p>
@@ -99,19 +99,24 @@ export default function About() {
                 I was learn some skill of FrontEnd about 1 years. But im always
                 try to improve my self by learning everyday.
               </p>
-              <div className="d-flex justify-content-evenly py-2 bg-secondary rounded-3">
-                {skillIcons.map((item, i) => (
-                  <OverlayTrigger
-                    key={i}
-                    placement="bottom"
-                    overlay={<Tooltip id="tooltip-bottom">{item.name}</Tooltip>}
-                  >
-                    <i className="text-white fs-3">{item.icon}</i>
-                  </OverlayTrigger>
-                ))}
+              <div className="p-3 text-center bg-secondary rounded-3">
+                <Row>
+                  {skillIcons.map((item, i) => (
+                    <Col key={i} lg={2} xs={4}>
+                      <OverlayTrigger
+                        placement="bottom"
+                        overlay={
+                          <Tooltip id="tooltip-bottom">{item.name}</Tooltip>
+                        }
+                      >
+                        <i className="text-white fs-3">{item.icon}</i>
+                      </OverlayTrigger>
+                    </Col>
+                  ))}
+                </Row>
               </div>
             </Col>
-            <Col md={12} className="p-0">
+            <Col md={6}>
               <p className="text-white fs-5 fw-bold mb-1 active-link">
                 Familiar with some tech
               </p>
@@ -119,16 +124,22 @@ export default function About() {
                 Besides frontend skills, I also sometimes try some backend
                 technology and im familiar with it
               </p>
-              <div className="d-flex justify-content-evenly py-2 bg-secondary rounded-3">
-                {familiarIcons.map((item, i) => (
-                  <OverlayTrigger
-                    key={i}
-                    placement="bottom"
-                    overlay={<Tooltip id="tooltip-bottom">{item.name}</Tooltip>}
-                  >
-                    <i className="text-white fs-3">{item.icon}</i>
-                  </OverlayTrigger>
-                ))}
+              <div className="p-3 text-center bg-secondary rounded-3">
+                <Row>
+                  {familiarIcons.map((item, i) => (
+                    <Col key={i} lg={2} xs={4}>
+                      <OverlayTrigger
+                        key={i}
+                        placement="bottom"
+                        overlay={
+                          <Tooltip id="tooltip-bottom">{item.name}</Tooltip>
+                        }
+                      >
+                        <i className="text-white fs-3">{item.icon}</i>
+                      </OverlayTrigger>
+                    </Col>
+                  ))}
+                </Row>
               </div>
             </Col>
           </Row>
