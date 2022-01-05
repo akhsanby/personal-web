@@ -19,19 +19,22 @@
 
 .card {
   background-color: variables.$dark-grey !important;
-  // width: 25rem;
+  // width: 15rem;
   height: auto;
   cursor: pointer;
   transition: 0.3s;
   color: variables.$white;
   padding: 0.8rem 0.8rem 0 0.8rem;
   &:hover {
-    background-color: variables.$black !important;
+    background-color: variables.$grey !important;
     color: variables.$white !important;
+    border: 2px solid variables.$white;
+    transform: translateY(-0.5rem);
   }
   img {
     border-radius: 10px;
     height: auto;
+    object-fit: cover;
   }
 }
 
