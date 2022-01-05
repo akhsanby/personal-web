@@ -41,7 +41,6 @@ export default function Project() {
       url: "/images/image7.png",
       repo: "https://github.com/akhsanby/calculator-app",
     },
-    
   ];
 
   return (
@@ -58,31 +57,41 @@ export default function Project() {
           </Col>
         </Row>
         <Row className={styles.row_2}>
-          {myProjectImage.map((item, i) => (
-            <Col
-              lg={4}
-              md={6}
-              xs={12}
-              key={i}
-              className="d-flex justify-content-center"
-            >
-              <a
-                href={item.repo}
-                target="_blank"
-                className="text-decoration-none text-dark"
-                rel="noreferrer"
-              >
-                <Card className={styles.card}>
-                  <Card.Img variant="top" src={item.url} />
-                  <Card.Body className={styles.card_body}>
-                    <Card.Text>{item.title}</Card.Text>
-                  </Card.Body>
-                </Card>
-              </a>
-            </Col>
-          ))}
+          <RenderProjectImagesComponents myProjectImage={myProjectImage} />
         </Row>
       </Container>
     </Layout>
   );
+}
+
+function RenderProjectImagesComponents({ myProjectImage }) {
+  if (myProjectImage.length > 0) {
+    return myProjectImage.map((item, i) => (
+      <Col
+        lg={4}
+        md={6}
+        xs={12}
+        key={i}
+        className="d-flex justify-content-center"
+      >
+        <a
+          href={item.repo}
+          target="_blank"
+          className="text-decoration-none text-dark"
+          rel="noreferrer"
+        >
+          <Card className={styles.card}>
+            <Card.Img variant="top" src={item.url} />
+            <Card.Body className={styles.card_body}>
+              <Card.Text>{item.title}</Card.Text>
+            </Card.Body>
+          </Card>
+        </a>
+      </Col>
+    ));
+  } else {
+    return (
+      <p className="text-white fs-3">You haven't any posted project here!</p>
+    );
+  }
 }
