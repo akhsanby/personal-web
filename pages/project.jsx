@@ -26,6 +26,22 @@ export default function Project() {
       url: "/images/image4.png",
       repo: "https://github.com/akhsanby/koran-online",
     },
+    {
+      title: "Calculator Tip",
+      url: "/images/image5.png",
+      repo: "https://github.com/akhsanby/calculator-tip",
+    },
+    {
+      title: "Simple E-Commerce",
+      url: "/images/image6.png",
+      repo: "https://github.com/akhsanby/toko-online",
+    },
+    {
+      title: "Calculator App",
+      url: "/images/image7.png",
+      repo: "https://github.com/akhsanby/calculator-app",
+    },
+    
   ];
 
   return (
