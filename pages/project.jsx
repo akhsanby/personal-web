@@ -41,7 +41,21 @@ export default function Project() {
       url: "/images/image7.png",
       repo: "https://github.com/akhsanby/calculator-app",
     },
-    
+    {
+      title: "Movie List App",
+      url: "/images/image8.png",
+      repo: "https://github.com/akhsanby/movie-list",
+    },
+    {
+      title: "Simple Apotek Web with Laravel",
+      url: "/images/image9.png",
+      repo: "https://github.com/akhsanby/apotek-laravel8",
+    },
+    {
+      title: "Simple Apotek Web with CodeIgniter",
+      url: "/images/image10.png",
+      repo: "https://github.com/akhsanby/apotek",
+    },
   ];
 
   return (
@@ -50,28 +64,13 @@ export default function Project() {
         <Row className={styles.row_1}>
           <Col md={12}>
             <h1 className="text-light text-start active-link">Projects</h1>
-            <p className="text-light">
-              Below is some of my projects, I'm always trying to improve myself
-              by learning everyday. Some of them are just for fun, feel free to
-              check them out.
-            </p>
+            <p className="text-light">Below is some of my projects, I'm always trying to improve myself by learning everyday. Some of them are just for fun, feel free to check them out.</p>
           </Col>
         </Row>
         <Row className={styles.row_2}>
           {myProjectImage.map((item, i) => (
-            <Col
-              lg={4}
-              md={6}
-              xs={12}
-              key={i}
-              className="d-flex justify-content-center"
-            >
-              <a
-                href={item.repo}
-                target="_blank"
-                className="text-decoration-none text-dark"
-                rel="noreferrer"
-              >
+            <Col lg={4} md={6} xs={12} key={i} className="d-flex justify-content-center">
+              <a href={item.repo} target="_blank" className="text-decoration-none text-dark" rel="noreferrer">
                 <Card className={styles.card}>
                   <Card.Img variant="top" src={item.url} />
                   <Card.Body className={styles.card_body}>
