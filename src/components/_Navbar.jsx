@@ -13,17 +13,11 @@ export default function _Navbar() {
     { name: "About Me", url: "/about" },
     { name: "Project", url: "/project" },
     { name: "Blog", url: "/blog" },
-    { name: "Contact", url: "/contact" },
+    // { name: "Contact", url: "/contact" },
   ];
 
   return (
-    <Navbar
-      collapseOnSelect
-      expand="md"
-      bg="dark"
-      variant="dark"
-      className={styles.navbar}
-    >
+    <Navbar collapseOnSelect expand="md" bg="dark" variant="dark" className={styles.navbar}>
       <Container>
         <Link href="/">
           <a className="fw-bold navbar-brand">99On</a>
@@ -33,13 +27,7 @@ export default function _Navbar() {
           <Nav className={styles.nav}>
             {navbarLink.map((item, i) => (
               <Link href={item.url} key={i}>
-                <a
-                  className={
-                    pathname == item.url ? "nav-link active-link" : "nav-link"
-                  }
-                >
-                  {item.name}
-                </a>
+                <a className={pathname == item.url ? "nav-link active-link" : "nav-link"}>{item.name}</a>
               </Link>
             ))}
           </Nav>
