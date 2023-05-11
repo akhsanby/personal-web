@@ -46,16 +46,16 @@ export default function Project() {
       url: "/images/image8.png",
       repo: "https://github.com/akhsanby/movie-list",
     },
-    {
-      title: "Simple Apotek Web with Laravel",
-      url: "/images/image9.png",
-      repo: "https://github.com/akhsanby/apotek-laravel8",
-    },
-    {
-      title: "Simple Apotek Web with CodeIgniter",
-      url: "/images/image10.png",
-      repo: "https://github.com/akhsanby/apotek",
-    },
+    // {
+    //   title: "Simple Apotek Web with Laravel",
+    //   url: "/images/image9.png",
+    //   repo: "https://github.com/akhsanby/apotek-laravel8",
+    // },
+    // {
+    //   title: "Simple Apotek Web with CodeIgniter",
+    //   url: "/images/image10.png",
+    //   repo: "https://github.com/akhsanby/apotek",
+    // },
   ];
 
   return (
