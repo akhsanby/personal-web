@@ -15,7 +15,7 @@ export default function Home() {
           <span>Hello, I'am</span>
           <span>Akhsan Bayu</span>
           <span>i'm Frontend Developer</span>
-          <span>I'm tech enthusiasm who like coding mostly in FrontEnd Development, I like learn about tech, programming and something new!</span>
+          <span>I'm tech enthusiasm who like coding mostly in FrontEnd Development, I have passion for responsive website & mobile-first design</span>
         </h1>
         <div className={styles.btn}>
           <Link href="/contact">
