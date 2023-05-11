@@ -18,11 +18,11 @@ export default function Home() {
           <span>I'm tech enthusiasm who like coding mostly in FrontEnd Development, I have passion for responsive website & mobile-first design</span>
         </h1>
         <div className={styles.btn}>
-          <Link href="/contact">
+          {/* <Link href="/contact">
             <Button variant="info">Contact Me</Button>
-          </Link>
+          </Link> */}
           <a href="/cv/my_cv.pdf">
-            <Button variant="info">My CV</Button>
+            <Button variant="info">Download CV</Button>
           </a>
         </div>
       </div>
