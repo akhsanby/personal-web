@@ -12,8 +12,8 @@ export default function _Navbar() {
     { name: "Home", url: "/" },
     { name: "About Me", url: "/about" },
     { name: "Project", url: "/project" },
-    { name: "Blog", url: "/blog" },
-    { name: "Contact", url: "/contact" },
+    // { name: "Blog", url: "/blog" },
+    // { name: "Contact", url: "/contact" },
   ];
 
   return (
