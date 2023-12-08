@@ -64,7 +64,7 @@ export default function Project() {
         <Row className={styles.row_1}>
           <Col md={12}>
             <h1 className="text-light text-start active-link">Projects</h1>
-            <p className="text-light">Below is some of my projects, I'm always trying to improve myself by learning everyday. Some of them are just for fun, feel free to check them out.</p>
+            <p className="text-light">Below is all my learning projects, working project is not included, I'm always trying to improve myself by learning everyday. Some of them are just for fun, feel free to check them out.</p>
           </Col>
         </Row>
         <Row className={styles.row_2}>
