@@ -7,9 +7,24 @@ import styles from "../styles/Project.module.scss";
 export default function Project() {
   const myProjectImage = [
     {
+      title: "Fullstack Todo List",
+      url: "/images/image11.png",
+      repo: "https://github.com/akhsanby/full-stack-todolist",
+    },
+    {
       title: "Personal Web",
       url: "/images/image1.png",
       repo: "https://github.com/akhsanby/personal-web",
+    },
+    {
+      title: "News App",
+      url: "/images/image4.png",
+      repo: "https://github.com/akhsanby/koran-online",
+    },
+    {
+      title: "Movie List App",
+      url: "/images/image8.png",
+      repo: "https://github.com/akhsanby/movie-list",
     },
     {
       title: "Rock Paper Scissor AI",
@@ -17,14 +32,14 @@ export default function Project() {
       repo: "https://github.com/akhsanby/rps-v3",
     },
     {
+      title: "Calculator App",
+      url: "/images/image7.png",
+      repo: "https://github.com/akhsanby/calculator-app",
+    },
+    {
       title: "Static Time Tracking App",
       url: "/images/image3.png",
       repo: "https://github.com/akhsanby/tracking-app",
-    },
-    {
-      title: "News App",
-      url: "/images/image4.png",
-      repo: "https://github.com/akhsanby/koran-online",
     },
     {
       title: "Calculator Tip",
@@ -35,16 +50,6 @@ export default function Project() {
       title: "Simple E-Commerce",
       url: "/images/image6.png",
       repo: "https://github.com/akhsanby/toko-online",
-    },
-    {
-      title: "Calculator App",
-      url: "/images/image7.png",
-      repo: "https://github.com/akhsanby/calculator-app",
-    },
-    {
-      title: "Movie List App",
-      url: "/images/image8.png",
-      repo: "https://github.com/akhsanby/movie-list",
     },
     // {
     //   title: "Simple Apotek Web with Laravel",
