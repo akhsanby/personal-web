@@ -13,9 +13,9 @@ export default function Home() {
       <div className="vw-100 vh-100 d-flex flex-column justify-content-center align-items-center">
         <h1 className={styles.title}>
           <span>Hello, I'am</span>
-          <span>Akhsan Bayu</span>
-          <span>i'm Frontend Developer</span>
-          <span>I'm tech enthusiasm who like coding mostly in FrontEnd Development, I have passion for responsive website & mobile-first design</span>
+          <span>Akhsan Bayu Riantama</span>
+          <span>i'm Software Engineer</span>
+          <span>I'm tech enthusiasm who like coding in both FrontEnd & Backend Development, I have goals to build apps with high-quality code and clean architectures</span>
         </h1>
         <div className={styles.btn}>
           {/* <Link href="/contact">
