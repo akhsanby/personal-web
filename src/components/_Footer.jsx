@@ -1,5 +1,5 @@
 import { Navbar, Container, Nav } from "react-bootstrap";
-import { BsGithub, BsLinkedin, BsEnvelope, BsInstagram } from "react-icons/bs";
+import { BsGithub, BsLinkedin, BsEnvelope, BsInstagram, BsWhatsapp } from "react-icons/bs";
 
 // custom styles
 import styles from "../../styles/Footer.module.scss";
@@ -25,6 +25,11 @@ export default function _Footer() {
       name: "Email",
       url: "mailto:akhsanby@gmail.com",
       icon: <BsEnvelope />,
+    },
+    {
+      name: "WhatsApp",
+      url: "https://wa.me/62895401224170",
+      icon: <BsWhatsapp />,
     },
   ];
 
