@@ -20,7 +20,7 @@ export default function _Navbar() {
     <Navbar collapseOnSelect expand="md" bg="dark" variant="dark" className={styles.navbar}>
       <Container>
         <Link href="/">
-          <a className="fw-bold navbar-brand">99On</a>
+          <a className="fw-bold navbar-brand">99Online</a>
         </Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
