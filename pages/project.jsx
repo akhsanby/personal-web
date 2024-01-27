@@ -7,6 +7,11 @@ import styles from "../styles/Project.module.scss";
 export default function Project() {
   const myProjectImage = [
     {
+      title: "Advance Memory Game",
+      url: "/images/image12.png",
+      repo: "https://github.com/akhsanby/memory-game",
+    },
+    {
       title: "Fullstack Todo List",
       url: "/images/image11.png",
       repo: "https://github.com/akhsanby/full-stack-todolist",
