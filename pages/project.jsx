@@ -7,40 +7,46 @@ import styles from "../styles/Project.module.scss";
 export default function Project() {
   const myProjectImage = [
     {
+      title: "Dashboard Responsive",
+      url: "/images/image14.png",
+      repo: "https://github.com/akhsanby/assigment-sp-digital",
+      description: "The challenge learning project is to slicing & design a responsive dashboard. The tech stack used is VueJS and Tailwind CSS.",
+    },
+    {
       title: "Grocery Online Responsive Template",
       url: "/images/image13.png",
       repo: "https://github.com/akhsanby/grocery-online-new",
-      description: "The challenge project is to design a responsive E-commerce platform. The tech stack used is NextJS and Tailwind CSS.",
+      description: "The challenge learning project is to design a responsive E-commerce platform. The tech stack used is NextJS and Tailwind CSS.",
     },
     {
       title: "Advance Memory Game",
       url: "/images/image12.png",
       repo: "https://github.com/akhsanby/memory-game",
-      description: "The challenge project is a Memory Game, using VueJS and Tailwind CSS as the tech stack.",
+      description: "The challenge learning project is a Memory Game, using VueJS and Tailwind CSS as the tech stack.",
     },
     {
       title: "Fullstack Todo List",
       url: "/images/image11.png",
       repo: "https://github.com/akhsanby/full-stack-todolist",
-      description: "The challenge project is to create a Todo List website connected to a MySQL database. The tech stack used is NextJS, Tailwind CSS, ExpressJS, and MySQL.",
+      description: "The challenge learning project is to create a Todo List website connected to a MySQL database. The tech stack used is NextJS, Tailwind CSS, ExpressJS, and MySQL.",
     },
     {
       title: "Personal Web",
       url: "/images/image1.png",
       repo: "https://github.com/akhsanby/personal-web",
-      description: "The challenge project is to create a personal design and website to showcase a learning portfolio. The tech stack used is NextJS, Bootstrap, and SASS.",
+      description: "The challenge learning project is to create a personal design and website to showcase a learning portfolio. The tech stack used is NextJS, Bootstrap, and SASS.",
     },
     {
       title: "News App",
       url: "/images/image4.png",
       repo: "https://github.com/akhsanby/koran-online",
-      description: "The challenge project is to slice a News website by fetching data from a public API. The tech stack used is NextJS and Tailwind CSS.",
+      description: "The challenge learning project is to slice a News website by fetching data from a public API. The tech stack used is NextJS and Tailwind CSS.",
     },
     {
       title: "Movie List App",
       url: "/images/image8.png",
       repo: "https://github.com/akhsanby/movie-list",
-      description: "The challenge project is to slice a Movie List website by fetching data from a public API. The tech stack used is NextJS, SASS, and jQuery.",
+      description: "The challenge learning project is to slice a Movie List website by fetching data from a public API. The tech stack used is NextJS, SASS, and jQuery.",
     },
     {
       title: "Rock Paper Scissor AI",
