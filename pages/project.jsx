@@ -7,6 +7,12 @@ import styles from "../styles/Project.module.scss";
 export default function Project() {
   const myProjectImage = [
     {
+      title: "IP Address Tracker",
+      url: "/images/image16.png",
+      repo: "https://github.com/akhsanby/ip-address-tracker",
+      description: "The challenge learning project from the website https://www.frontendmentor.io to create IP Address Tracker. The tech stack used is VanillaJS, Tailwind CSS, and LeafletJS",
+    },
+    {
       title: "Quiz App",
       url: "/images/image15.png",
       repo: "https://github.com/akhsanby/quiz-app",
