@@ -7,6 +7,12 @@ import styles from "../styles/Project.module.scss";
 export default function Project() {
   const myProjectImage = [
     {
+      title: "Quiz App",
+      url: "/images/image15.png",
+      repo: "https://github.com/akhsanby/quiz-app",
+      description: "The challenge learning project from the website https://www.frontendmentor.io to create Quiz Programming App. The tech stack used is VueJS and Tailwind CSS.",
+    },
+    {
       title: "Dashboard Responsive",
       url: "/images/image14.png",
       repo: "https://github.com/akhsanby/assigment-sp-digital",
@@ -58,19 +64,19 @@ export default function Project() {
       title: "Calculator App",
       url: "/images/image7.png",
       repo: "https://github.com/akhsanby/calculator-app",
-      description: "The challenge project from the website https://www.frontendmentor.io was to create a calculator without using any frameworks and only using HTML, CSS, and JavaScript.",
+      description: "The challenge project from the website https://www.frontendmentor.io to create a calculator without using any frameworks and only using HTML, CSS, and JavaScript.",
     },
     {
       title: "Static Time Tracking App",
       url: "/images/image3.png",
       repo: "https://github.com/akhsanby/tracking-app",
-      description: "The challenge project from the website https://www.frontendmentor.io was to slice a web layout using React and Windi CSS.",
+      description: "The challenge project from the website https://www.frontendmentor.io to slice a web layout using React and Windi CSS.",
     },
     {
       title: "Calculator Tip",
       url: "/images/image5.png",
       repo: "https://github.com/akhsanby/calculator-tip",
-      description: "The challenge project from the website https://www.frontendmentor.io was to create a tip calculator using the tech stack React and Tailwind CSS.",
+      description: "The challenge project from the website https://www.frontendmentor.io to create a tip calculator using the tech stack React and Tailwind CSS.",
     },
     {
       title: "Simple E-Commerce",
