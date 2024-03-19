@@ -40,7 +40,7 @@ export default function Project() {
       title: "Fullstack Todo List",
       url: "/images/image11.png",
       repo: "https://github.com/akhsanby/full-stack-todolist",
-      description: "The challenge learning project is to create a Todo List website connected to a MySQL database. The tech stack used is NextJS, Tailwind CSS, ExpressJS, and MySQL.",
+      description: "The challenge learning project is to create a Todo List with drag-drop feature connected to a MySQL database. The tech stack used is NextJS, Tailwind CSS, ExpressJS, and MySQL.",
     },
     {
       title: "Personal Web",
