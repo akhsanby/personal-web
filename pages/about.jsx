@@ -43,7 +43,7 @@ export default function About() {
             <Col md={12} style={{ textAlign: "justify", paddingLeft: "24px", paddingRight: "24px" }}>
               <p className="card-text text-white">Hello, my name is Akhsan Bayu Riantama, you can call me Akhsan. I live in Magelang, Central Java, Indonesia</p>
               <p className="card-text text-white">
-                I studied programming during college and further honed my skills by participating in several programming bootcamps, with a focus on both frontend and backend development, particularly in web programming. With over <span className="text-info">2 years of experience</span> in the IT industry, I am deeply passionate about crafting clean code and solving problems through programming. My career mission is to be <span className="text-info">Professional Software Engineer</span> who build apps with <span className="text-info">high-quality code and clean architectures</span>, ensuring my code is easily read & understandable for all developers in the world.
+                I had studied programming while in college, and decided to further develop my programming skills, joining many programming Frontend bootcamps. I have over 2 working years of working experience in IT Industries with tech stack Vue.JS, React.JS, & Laravel. I am deeply passionate about <span className="text-info">crafting clean code & slicing UI/ UX design</span> . My goal career is to build high quality code, clean architecture, & creating beautiful responsive UI/UX design for any application.
               </p>
             </Col>
           </Row>

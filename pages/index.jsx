@@ -14,8 +14,8 @@ export default function Home() {
         <h1 className={styles.title}>
           <span>Hello, I'am</span>
           <span>Akhsan Bayu Riantama</span>
-          <span>i'm Software Engineer</span>
-          <span>I'm tech enthusiasm who like coding in both FrontEnd & Backend Development, I have goals to build apps with high-quality code and clean architectures</span>
+          <span>i'm Frontend Engineer</span>
+          <span>I'm tech enthusiasm who like coding in FrontEnd Development, I have goals to build apps with beautiful UI/UX design, high-quality code and clean architectures</span>
         </h1>
         <div className={styles.btn}>
           {/* <Link href="/contact">
