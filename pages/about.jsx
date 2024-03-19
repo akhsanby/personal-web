@@ -40,22 +40,11 @@ export default function About() {
             </Col>
           </Row>
           <Row className="my-4">
-            <Col md={4} className="text-center">
-              <Image src="/images/pp2.jpg" alt="pic" width={200} height={200} className={styles.img} priority />
-            </Col>
-            <Col md={8} style={{ textAlign: "justify" }}>
+            <Col md={12} style={{ textAlign: "justify", paddingLeft: "24px", paddingRight: "24px" }}>
               <p className="card-text text-white">Hello, my name is Akhsan Bayu Riantama, you can call me Akhsan. I live in Magelang, Central Java, Indonesia</p>
               <p className="card-text text-white">
                 I studied programming during college and further honed my skills by participating in several programming bootcamps, with a focus on both frontend and backend development, particularly in web programming. With over <span className="text-info">2 years of experience</span> in the IT industry, I am deeply passionate about crafting clean code and solving problems through programming. My career mission is to be <span className="text-info">Professional Software Engineer</span> who build apps with <span className="text-info">high-quality code and clean architectures</span>, ensuring my code is easily read & understandable for all developers in the world.
               </p>
-              {/* <p className="card-text text-white">
-                I'm tech enthusiasm who like coding mostly in FrontEnd Development who love to work with JavaScript and{" "}
-                <a className="text-decoration-none text-info" href="https://github.com/enaqx/awesome-react">
-                  React Ecosystem
-                </a>
-                . I like learn about tech, programming and something new!.
-              </p> */}
-              {/* <p className="card-text text-white">I'm a passionate about Web Development and I'm always looking for a new challenge. To be a Software Engineer is my future goal.</p> */}
             </Col>
           </Row>
           <Row className="w-100" style={{ rowGap: "1rem" }}>
